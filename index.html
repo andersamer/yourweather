@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>yourWeather</title> <!-- Title of the page -->
+	<link rel="shortcut icon" type="image/ico" href="./favicon.ico">
+        <link rel="stylesheet" href="style.css"> <!-- Link to the stylesheet -->
+        <script src="./weather.js"></script> <!-- A script containing the weather class -->
+        <script src="./script.js"></script> <!-- A script that does the rest of the work -->
+    </head>
+
+    <body>
+        <div id="wrapper"> <!-- A wrapper for the CSS grid -->
+            <img class="background" src="./mountains.jpg"> <!-- The background image -->
+            <div id="display"> <!-- A CSS Grid wrapper for the main display pane -->
+                <h1 id="title">yourWeather</h1>
+                <div id="main">
+                    <span id="temperature">--°</span> <!-- The temperature -->
+                    <span id="location">Nowhere, OH</span> <!-- User location -->
+                </div>
+                <em id="conditions">Loading weather data...</em>  <!-- Weather Conditions -->
+            </div>
+
+            <div id="details"> <!-- A CSS Grid wrapper for the details pane -->
+                <h1>More Details</h1>
+                <!-- Below are place holders for all of the weather details -->
+                <p class='details'><strong>Feels like: </strong><span id="feels-like">--</span></p>
+                <p class='details'><strong>Low: </strong><span id="low">--</span></p>
+                <p class='details'><strong>High: </strong><span id="high">--</span></p>
+                <p class='details'><strong>Humidity: </strong><span id="humidity"></span>%</p>
+            </div>
+            
+        </div>
+    </body>
+</html>
